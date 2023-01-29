@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-  margin: 5px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 } 
 nav{
   display: flex;
@@ -14,6 +14,7 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  position: fixed;
 }
 
 nav ul{
@@ -95,17 +96,43 @@ input[type="checkbox"]{
   }
 }
 .content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  padding: 0 30px;
+  height: 100vh;
   color: #1b1b1b;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
 }
-.content div{
-  font-size: 40px;
-  font-weight: 700;
+.icons {
+  display: flex;
+}
+.icons div {
+  margin-right: 20px ;
+}
+.content h1 {
+  font-size: 5rem;
+  line-height: 1.3em;
+  margin-bottom: 1.3rem;
+}
+.content p {
+  font-size: 1.3em;
+  line-height: 2em;
+  margin-bottom: 3.8em;
+}
+.content .btn {
+  background: #e5547e ;
+  padding: 20px 50px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: white;
+}
+.fb {
+  transition:.5s ease;
+}
+.fb:hover {
+  transform: translateY(-10px);
+
 }
