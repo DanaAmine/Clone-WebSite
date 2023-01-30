@@ -1,4 +1,4 @@
-let bar = document.querySelector(".bars");
+let barss = document.querySelector(".bars");
 let ul = document.querySelector("ul");
 let nav = document.querySelector("nav");
 let logo = document.querySelector('#logo');
