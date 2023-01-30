@@ -1,3 +1,4 @@
+
 let bars = document.querySelector(".bars");
 let ul = document.querySelector("ul");
 let nav = document.querySelector("nav");
